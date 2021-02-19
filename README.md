@@ -13,7 +13,7 @@ Para el desarrollo de este parcial se debe utilizar Maven como una herramienta p
 
 Después de descargar o clonar el repositorio del parcial, se debe utilizar el comando **mvn package** para generar el ejecutable .jar con los .class compilados.
 Para poder usar la aplicación se deben seguir los siguientes pasos :
-  1. Abrir la aplicación de forma local o en heroku y escribir números separados por punto y coma.
+  1. Abrir la aplicación de forma local o en heroku.
   [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](http://limitless-falls-93957.herokuapp.com/parcialVillamarinR)
   2. Debe ingresar las funciones "sin","cos","tan", seguidas de un"-" y un numero en radianes
  
