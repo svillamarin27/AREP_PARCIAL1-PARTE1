@@ -1,13 +1,18 @@
 package edu.escuelaing.arep.parcial;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+import static spark.Spark.*;
+import spark.Request;
+import spark.Response;
+public class App {
+	public static void main(String[] args) {
+		port(getPort());
+		get("/parcialVillamarin", (req, res) -> "Hello Heroku");
+	}
+	static int getPort() {
+		 if (System.getenv("PORT") != null) {
+			 return Integer.parseInt(System.getenv("PORT"));
+		 }
+		 return 4567; 
+		 }
+
 }
